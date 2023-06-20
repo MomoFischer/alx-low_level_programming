@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include <unistd.h>
 
-int main(void) {
-	printf("_putchar\n");
-	return 0
-}		
+int _putchar(char c)
+{
+    return write(1, &c, 1);
+}
