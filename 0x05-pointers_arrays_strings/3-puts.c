@@ -13,9 +13,4 @@ void _puts(char *str)
 		_putchar(str[i]);
 	}
 	_putchar('\n');
-<<<<<<< HEAD
 }
-
-=======
-}
->>>>>>> 3c14449d8069986db48866b0d4e0f2de18d34444

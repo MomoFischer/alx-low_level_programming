@@ -23,9 +23,4 @@ void print_rev(char *s)
 	}
 
 	_putchar('\n');
-<<<<<<< HEAD
 }
-
-=======
-}
->>>>>>> 3c14449d8069986db48866b0d4e0f2de18d34444

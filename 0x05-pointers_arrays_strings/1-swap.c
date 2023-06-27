@@ -12,9 +12,4 @@ void swap_int(int *a, int *b)
 	c = *a;
 	*a = *b;
 	*b = c;
-<<<<<<< HEAD
 }
-
-=======
-}
->>>>>>> 3c14449d8069986db48866b0d4e0f2de18d34444
