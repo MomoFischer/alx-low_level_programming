@@ -1,34 +1,29 @@
 #include "main.h"
 
 /**
- * cap_string - capitalizes chars in a string following a separator
- *
- * @c: character string pointer
- * Return: char pointer
+ * leet - function that encodes a string into 1337
+ * @str: character to be checked
+ * Return: if seperator return 1. Otherwise return 0;
  */
-char *cap_string(char *c)
+char *leet(char *str)
 {
-	int i = 0, j,
-	sep[] = {32, '\t', 11,  '\n', 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+	/*Declaring variables*/
+	int count = 0, i = 0;
+	char *letters = "aeotlAEOTL";
+	char *nums = "4307143071";
 
-	if (c[0] > 96 && c[0] < 123)
-		c[0] -= 32;
-	while (c[i] != '\0')
+	/*Start WHILE*/
+	while (str[count] != '\0')
 	{
-		if (c[i] > 96 && c[i] < 123)
+		i = 0;
+		while (letters[i] != '\0') /*Evaluate all cases*/
 		{
-			j = 0;
-			while (j < 14)
-			{
-				if (c[i - 1] == sep[j])
-				{
-					c[i] -= 32;
-					break;
-				}
-				j++;
-			}
+			if (str[count] == letters[i]) /*Match between string a letters*/
+				str[count] = nums[i];
+			i++;
 		}
-		i++;
-	}
-	return (c);
+		count++; /*Add count*/
+	} /*End WHILE*/
+
+	return (str);
 }
