@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * here I will try to solve task NO.0
- * Wish me good luck :D
- */
+ * _print_rev_recursion - print a string in reverse
+ * @s: string
+ * Return 0;
+*/
 void _puts_recursion(char *s)
 {
 	if (*s)
